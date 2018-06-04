@@ -1,0 +1,21 @@
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Lab IV - Auth</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/solicitud" routerLinkActive="active">PEDIR REMIS</a></li>
+      <li><a routerLink="/listadoviajes" routerLinkActive="active">VIAJES</a></li>
+      <li><a routerLink="/informes" routerLinkActive="active">Informes</a></li>
+      <li><a routerLink="/vehiculos" routerLinkActive="active">Vehiculos</a></li>
+      <li><a routerLink="/choferes" routerLinkActive="active">Choferes</a></li>
+      <li><a routerLink="/clientes" routerLinkActive="active">Clientes</a></li>
+      <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a [routerLink]="[]" (click)="salir()" routerLinkActive="active">Logout</a></li>
+    </ul>
+  </div>
+</nav>
